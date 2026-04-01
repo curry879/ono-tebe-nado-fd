@@ -11,39 +11,64 @@
   </head>
 
   <body>
+
     <header class="header"> 
       <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul class="header__links-list">
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0"> Главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href=""> Посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href=""> Об аукционе</a>
+          </li>  
         </ul>
-
       </nav>
-      <a class="logo" href=""></a>
-      <address></address>
+
+      <a class="header__logo" href="#0">
+        <img
+          class="header__logo-image"
+          src="./images/logo-black.svg" 
+          alt="Логотип Оно тебе надо"/>
+      </a>
+      <address class="header__address">
+        <a class="header__address-link" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="header__address-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="header__address-text">наб. Принсенграхт 263-265, Амстердам</p>
+      </address>
     </header> 
 
     <main>
-      <section class="cover"
-          <h1></h1>
+      <section class="cover">
+          <h1 class="cover__title">
+            <span class="aligned-text">Оно</span>
+            <span class="aligned-text alignet-text-center">Тебе</span>
+            <span class="aligned-text alignet-text-riht">Надо</span>
+          </h1>
+
           <div class="description">
-            <p></p>
-            <button></button>
+            <p class="description__text">Аукцион вещей, в которые никто не верил</p>
+            <button class="bet-button" type="button">Сделать ставку</button>
           </div>
       </section>
 
-      <section class="lots">
-        <div>
-          <h2></h2>
-          <ul>
-            <li>
-              <a href="">
-                <article></article>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <section class="lots" id="lots">
+        <h2 class="lots__heading">Лоты</h2>
+            <ul class="lots__card-list">
+             <li class="lots__card-list-item">
+                <a class="card-link" href="">
+                  <article class="card card_type_film">
+                    <h3 class="card__title">Фильм режиссера, который бросил киношколу</h3>
+                    <p class="card__text">
+                      Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка,
+                      если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                    </p>
+                  </article>
+                </a>
+              </li>
+            </ul>
       </section>
 
       <section class="about"></section>
