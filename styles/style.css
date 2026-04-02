@@ -1,1 +1,37 @@
-/* место для вашего кода */
+.header {
+  padding: 92px 50px 96px;
+}
+
+.cover {
+  padding: 165px 50px 50px;
+  background: url("../images/cover.jpg") center / cover no-repeat;
+}
+
+.lots {
+  padding: 180px 24px 0;
+}
+
+.about {
+  padding: 120px 24px 0;
+}
+
+.footer {
+  padding: 180px 50px 82px;
+}
+
+.card {
+  padding: 48px 40px;
+  color: #fff;
+}
+
+.card_type_film {
+  background: url(../images/card-lot-01.jpg) center / cover no-repeat;
+}
+
+.card_type_book {
+  background: url(../images/card-lot-02.jpg) center / cover no-repeat;
+}
+
+.card_type_picture {
+  background: url(../images/card-lot-03.jpg) center / cover no-repeat;
+}
