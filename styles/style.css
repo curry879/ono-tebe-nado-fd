@@ -87,6 +87,32 @@
   letter-spacing: 0;
 }
 
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 106px;
+  position: relative;
+  z-index: 1;
+}
+
+.cover__description-text {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 12px 32px;
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 .lots {
   padding: 180px 24px 0;
 }
