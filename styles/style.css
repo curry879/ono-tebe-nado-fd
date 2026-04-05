@@ -44,6 +44,7 @@
 }
 .address a {
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .cover {
@@ -58,7 +59,7 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.cover__title, .description {
+.cover__title, .cover__description {
   position: relative;
   z-index: 1;
 }
@@ -117,17 +118,160 @@
   padding: 180px 24px 0;
 }
 
+.lots__heading {
+  margin-bottom: 27px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+}
+
+.card__title,
+.card__text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+
+.card__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+
+.card__text {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
 .about {
   padding: 120px 24px 0;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+}
+
+.about__column_logo {
+  display: flex;
+  justify-content: center;
+}
+
+.about__column_text {
+  padding-top: 100px;
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  width: 148px;
+}
+
+.about__title {
+  margin-bottom: 100px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__text p {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .footer {
   padding: 180px 50px 82px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: start;
 }
 
-.card {
-  padding: 48px 40px;
-  color: #fff;
+.footer__menu {
+  justify-self: center;
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__menu-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__social-icon {
+  width: 48px;
 }
 
 .card_type_film {
