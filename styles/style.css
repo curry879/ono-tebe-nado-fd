@@ -51,7 +51,11 @@
   position: relative;
   min-height: 757px;
   padding: 165px 50px 50px;
-  background: url("../images/cover.jpg") center / cover no-repeat;
+  background: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 125% auto;
+  z-index: -2;
 
 }
 
